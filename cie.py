@@ -1,4 +1,6 @@
 import sys
+if len(sys.argv) != 2:
+    sys.exit(1)
 original = sys.argv[1]
 rev = original[::-1]
 if original == rev:
