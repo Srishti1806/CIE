@@ -1,9 +1,14 @@
+
 import sys
+
 if len(sys.argv) != 2:
+    print("Usage: python palindrome.py <string>")
     sys.exit(1)
-original = sys.argv[1]
-rev = original[::-1]
-if original == rev:
-    print("The given string is palindrome.")
+
+s = sys.argv[1]
+rev = s[::-1]
+
+if s == rev:
+    print("The given string is a palindrome.")
 else:
-    print("The given string is not palindrome.")
+    print("The given string is not a palindrome.")
